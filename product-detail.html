@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./template/header-logined .html");
+    </script>
+
+    <!-- MAIN -->
+    <main class="product-page">
+        <div class="container">
+            <!-- Search form -->
+            <div class="product-container d-none d-md-block">
+                <div class="product-container__search">
+                    <input type="text" placeholder="Search for item" class="product-container__text">
+                    <button type="submit" class="product-container__submit">
+                        <img class="product-container__img" src="./assets/icons/search.svg" alt="icon-search">
+                    </button>
+                </div>
+            </div>
+            <!-- Breadcrumbs -->
+            <div class="product-container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link">
+                            Departments
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link">
+                            Coffee
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link">
+                            Coffee Beans
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">
+                            LavAzza
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Product info -->
+            <div class="product-container">
+                <div class="row">
+                    <div class="col-5 col-xxl-6 col-lg-12">
+                        <div class="product-preview">
+                            <div class="product-preview__list">
+                                <div class="product-preview__item">
+                                    <img src="./assets/img/product/product-1.png" alt="" class="product-preview__img">
+                                </div>
+                                <div class="product-preview__item">
+                                    <img src="./assets/img/product/product-2.png" alt="" class="product-preview__img">
+                                </div>
+                                <div class="product-preview__item">
+                                    <img src="./assets/img/product/product-3.png" alt="" class="product-preview__img">
+                                </div>
+                                <div class="product-preview__item">
+                                    <img src="./assets/img/product/product-4.png" alt="" class="product-preview__img">
+                                </div>
+                            </div>
+                            <div class="product-preview__thumbs d-md-none">
+                                <img src="./assets/img/product/product-1.png" alt="" class="product-preview__thumb-img product-preview__thumb-img--current">
+                                <img src="./assets/img/product/product-2.png" alt="" class="product-preview__thumb-img">
+                                <img src="./assets/img/product/product-3.png" alt="" class="product-preview__thumb-img">
+                                <img src="./assets/img/product/product-4.png" alt="" class="product-preview__thumb-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 col-xxl-6 col-lg-12">
+                        <section class="prod-info">
+                            <h1 class="prod-info__heading">
+                                Coffee Beans - Espresso Arabica and Robusta Beans
+                            </h1>
+                            <div class="row">
+                                <div class="col-5 col-xxl-6 col-xl-12">
+
+                                    <div class="prod-prop">
+                                        <img src="./assets/icons/star.svg" alt="" class="prod-prop__icon">
+                                        <h4 class="prod-prop__title">(3.5) 1100 reviews</h4>
+                                    </div>
+
+                                    <label for="" class="prod-prop__form">
+                                        Size/Weight
+                                    </label>
+
+                                    <div class="prod-prop__form-box">
+                                        <div class="prod-prop__form-left" style="width: 146px;">
+                                            500g
+                                            <img src="./assets/icons/form-down.svg" alt="" class="prod-prop__form--icon">
+                                        </div>
+                                        <div class="prod-prop__form-right">
+                                            Gram
+                                            <img src="./assets/icons/form-down.svg" alt="" class="prod-prop__form--icon">
+                                        </div>
+                                    </div>
+
+                                    <ul class="prod-prop__item">
+                                        <li class="prod-prop__list">Small</li>
+                                        <li class="prod-prop__list">Medium</li>
+                                        <li class="prod-prop__list">Large</li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-7 col-xxl-6 col-xl-12">
+                                    <div class="prod-prop__box">
+                                        <div class="prod-prop">
+                                            <img src="./assets/icons/document.svg" alt="" class="prod-prop__icon">
+                                            <h4 class="prod-prop__title">Compare</h4>
+                                        </div>
+    
+                                        <div class="prod-prop">
+                                            <img src="./assets/icons/buy.svg" alt="" class="prod-prop__icon">
+                                           <div>
+                                                <h4 class="prod-prop__title">Delivery</h4>
+                                                <p class="prod-prop__desc">
+                                                    From $6 for 1-3 days
+                                                </p>
+                                           </div>
+                                        </div>
+    
+                                        <div class="prod-prop">
+                                            <img src="./assets/icons/bag.svg" alt="" class="prod-prop__icon">
+                                           <div>
+                                                <h4 class="prod-prop__title">Pickup</h4>
+                                                <p class="prod-prop__desc">Out of 2 store, today</p>
+                                           </div>
+                                        </div>
+    
+                                        <div class="prod-prop__price">
+                                            <div class="prod-prop__heading">
+                                                <h3 class="prod-prop__heading--price">
+                                                    $500.00
+                                                </h3>
+                                                <div class="prod-prop__heading--sale">
+                                                    10%
+                                                </div>
+                                            </div>
+    
+                                            <h2 class="prod-prop__price--title">
+                                                $540.00
+                                            </h2>
+    
+                                            <div class="prod-prop__price-submit">
+                                                <button class="btn btn--primary submit__card">
+                                                    Add to cart
+                                                </button>
+                                                <button class="prod-prop__price--img">
+                                                    <img src="./assets/icons/heart.svg" alt="" class="prod-prop__price--icon">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment -->
+            <div class="product-container">
+                <span class="product__liked d-none d-sm-block">
+                    Similar items you might like
+                </span>
+                <div class="comment__item">
+                    <h3 class="comment__list-title comment__list-title--active">
+                        Description
+                    </h3>
+                    <h3 class="comment__list-title">
+                        Review (1100)
+                    </h3>
+                    <h3 class="comment__list-title">
+                        Similar
+                    </h3>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <div class="row">
+                        <div class="col-8 col-xl-10 col-lg-12">
+                            <h2 class="tab-pane__desc"> 
+                                This article is about the beverage. For other uses, see <a href="https://en.wikipedia.org/wiki/Coffee#:~:text=Coffee%20is%20a%20beverage%20brewed,world%20market%20for%20hot%20drinks.">Coffee</a> 
+                            </h2>
+                            <p class="tab-pane__content">
+                                Coffee is a beverage brewed from roasted coffee beans. 
+                                Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans,
+                                 primarily due to its caffeine content. 
+                                It has the highest sales in the world market for hot drinks.[2]
+                            </p>
+                            <div class="tab-pane__content--imgeas">
+                                <img class="tab-pane__img" src="./assets/img/product/product-1.png" alt="">
+                                <p class="tab-pane__img--text">
+                                    Espresso latte and black filtered coffee
+                                </p>
+                            </div>
+                            <p class="tab-pane__content--text">
+                                The seeds of the Coffea plant's fruits are separated to produce unroasted green coffee beans. 
+                                The beans are roasted and then ground into fine particles typically steeped in hot water before being filtered out, 
+                                producing a cup of coffee. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepared 
+                                and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). 
+                                Sugar, sugar substitutes, milk,
+                                and cream are often added to mask the bitter taste or enhance the flavor
+                            </p>
+
+                            <p class="tab-pane__content--text">
+                                Though coffee is now a global commodity, it has a long history tied closely to food traditions around the Red Sea. 
+                                <strong>The earliest credible evidence of coffee drinking as the modern beverage appears in modern-day 
+                                    Yemen in southern Arabia in the middle of the 15th century in Sufi shrines, where coffee seeds were first roasted 
+                                    and brewed in a manner similar to how it is now prepared for drinking</strong>.[3] The coffee beans were procured by the Yemenis 
+                                from the Ethiopian Highlands via coastal Somali intermediaries, and cultivated in Yemen. By the 16th century, the drink had 
+                                reached the rest of the Middle East and North Africa, later spreading to Europe.
+                            </p>
+
+                            <h4 class="tab-pane__content--heading">
+                                Overview 
+                            </h4>
+
+
+                            <div class="tab-pane__content--imgeas">
+                                <img class="tab-pane__img" src="./assets/img/product/product-3.png" alt="">
+                                <p class="tab-pane__img--text">
+                                    Robusta–Arabica coffee beans
+                                </p>
+                            </div>
+
+
+                            <p class="tab-pane__content">
+                                Coffee beans are nuts . The inside of the fruit is red or purple, often called a berry . 
+                                It is just like regular berries, albeit in the form of coffee beans. 
+                                In English, they are called " beans " because of their similarity to legumes. 
+                                The two most economically important varieties of the coffee plant are Arabica and Robusta coffee beans .
+                            </p>
+                            <p class="tab-pane__content--text">
+                                Arabica coffee accounts for 65-70%  of coffee produced worldwide and the remaining 30% is Robusta coffee. 
+                                Arabica beans consist of 0.8-1.4% caffeine and Robusta beans consist of 1.7-4% caffeine .
+                            </p>
+                            <p class="tab-pane__content--text">
+                                Robusta coffee is grown at altitudes below 600m, in tropical climates. Therefore, Robusta coffee is present in many countries. 
+                                In Vietnam, the majority of coffee grown and exported is Robusta coffee. [first]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane">
+                    <h2 class="tab-pane__heading">
+                        What our customers are saying
+                    </h2>
+
+                    <div class="comment__row">
+                        <div class="row">
+                            <div class="col-4 col-lg-4 col-md-12">
+                                <div class="comment__col">
+                                    <div class="comment__col-desc">
+                                        <img src="./assets/img/avatar-img.jpg" alt="" class="comment__col-img">
+                                        <div class="comment__col-title">
+                                            <h3 class="comment__col-name">
+                                                Jakir Hussen
+                                            </h3>
+                                            <p class="comment__col-evaluate">
+                                                Great product, I love this Coffee Beans 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment__col-review">
+                                        <div class="comment__rivew-star">
+                                            <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star-right.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star-review--zero.svg" alt="" class="riew-star__icon">
+                                        </div>
+                                        <span class="comment__rivew-title">(3.5) Review</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-lg-4 col-md-12">
+                                <div class="col-margin">
+                                    <div class="comment__col">
+                                        <div class="comment__col-desc">
+                                            <img src="./assets/img/avatar-img-2.jpg" alt="" class="comment__col-img">
+                                            <div class="comment__col-title">
+                                                <h3 class="comment__col-name">
+                                                    Jubed Ahmed
+                                                </h3>
+                                                <p class="comment__col-evaluate">
+                                                    Awesome Coffee, I love this Coffee Beans. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="comment__col-review">
+                                            <div class="comment__rivew-star">
+                                                <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                                <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                                <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                                <img src="./assets/icons/star-right.svg" alt="" class="riew-star__icon">
+                                                <img src="./assets/icons/star-review--zero.svg" alt="" class="riew-star__icon">
+                                            </div>
+                                            <span class="comment__rivew-title">(3.5) Review</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-4 col-md-12">
+                                <div class="comment__col">
+                                    <div class="comment__col-desc">
+                                        <img src="./assets/img/avata-img-3.jpg" alt="" class="comment__col-img">
+                                        <div class="comment__col-title">
+                                            <h3 class="comment__col-name">
+                                                Delwar Hussain
+                                            </h3>
+                                            <p class="comment__col-evaluate">
+                                                Great product, I like this Coffee Beans.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment__col-review">
+                                        <div class="comment__rivew-star">
+                                            <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star-right.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star-review--zero.svg" alt="" class="riew-star__icon">
+                                            <img src="./assets/icons/star-review--zero.svg" alt="" class="riew-star__icon">
+                                        </div>
+                                        <span class="comment__rivew-title">(2.5) Review</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane">
+                    <div class="row row-cols-5 row-cols-lg-2 row-cols-sm-1 g-3">
+                        <!-- Product card 1-->
+                        <div class="col">
+                            <article class="product-card">
+        
+                                <div class="product-card__img-warp">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/product-1.png" alt="" class="product-card__thumb">
+                                    </a>
+                                    <button class="like-btn product-card__like-btn">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon icon">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon--liked">
+                                    </button>
+                                </div>
+        
+                                <h3 class="product-card__title">
+                                    <a href="./product-detail.html">
+                                        Coffee Beans - Espresso Arabica and Robusta Beans
+                                    </a>
+                                </h3>
+                                <p class="product-card__brand">Lavazza</p>
+                                <div class="product-card__row">
+                                    <span class="product-card__price">$47.00</span>
+                                    <img src="./assets/icons/star.svg" alt="" class="product-card__star">
+                                    <span class="product-card__score">4.3</span>
+                                </div>
+                            </article>
+                        </div>
+        
+                        <!-- Product card 2-->
+                        <div class="col">
+                            <article class="product-card">
+        
+                                <div class="product-card__img-warp">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/product-3.png" alt="" class="product-card__thumb">
+                                    </a>
+                                    <button class="like-btn product-card__like-btn">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon icon">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon--liked">
+                                    </button>
+                                </div>
+        
+                                <h3 class="product-card__title">
+                                    <a href="./product-detail.html">
+                                        Lavazza Coffee Blends - Try the Italian Espresso
+                                    </a>
+                                </h3>
+                                <p class="product-card__brand">Lavazza</p>
+                                <div class="product-card__row">
+                                    <span class="product-card__price">$53.00</span>
+                                    <img src="./assets/icons/star.svg" alt="" class="product-card__star">
+                                    <span class="product-card__score">3.4</span>
+                                </div>
+                            </article>
+                        </div>
+        
+                        <!-- Product card 3-->
+                        <div class="col">
+                            <article class="product-card">
+        
+                                <div class="product-card__img-warp">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/product-2.png" alt="" class="product-card__thumb">
+                                    </a>
+                                    <button class="like-btn like-btn--liked product-card__like-btn">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon icon">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon--liked">
+                                    </button>
+                                </div>
+        
+                                <h3 class="product-card__title">
+                                    <a href="./product-detail.html">
+                                        Lavazza - Caffè Espresso Black Tin - Ground coffee
+                                    </a>
+                                </h3>
+                                <p class="product-card__brand">welikecoffee</p>
+                                <div class="product-card__row">
+                                    <span class="product-card__price">$99.99</span>
+                                    <img src="./assets/icons/star.svg" alt="" class="product-card__star">
+                                    <span class="product-card__score">5.0</span>
+                                </div>
+                            </article>
+                        </div>
+        
+                        <!-- Product card 4-->
+                        <div class="col">
+                            <article class="product-card">
+        
+                                <div class="product-card__img-warp">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/product-4.png" alt="" class="product-card__thumb">
+                                    </a>
+                                    <button class="like-btn product-card__like-btn">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon icon">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon--liked">
+                                    </button>
+                                </div>
+        
+                                <h3 class="product-card__title">
+                                    <a href="./product-detail.html">
+                                        Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                    </a>
+                                </h3>
+                                <p class="product-card__brand">Lavazza</p>
+                                <div class="product-card__row">
+                                    <span class="product-card__price">$38.65</span>
+                                    <img src="./assets/icons/star.svg" alt="" class="product-card__star">
+                                    <span class="product-card__score">4.4</span>
+                                </div>
+                            </article>
+                        </div>
+        
+                        <!-- Product card 5-->
+                        <div class="col">
+                            <article class="product-card">
+        
+                                <div class="product-card__img-warp">
+                                    <a href="./product-detail.html">
+                                        <img src="./assets/img/product/product-9.png" alt="" class="product-card__thumb">
+                                    </a>
+                                    <button class="like-btn product-card__like-btn">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon icon">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon--liked">
+                                    </button>
+                                </div>
+        
+                                <h3 class="product-card__title">
+                                    <a href="./product-detail.html">
+                                        Coffee Beans - Espresso Arabica and Robusta Beans
+                                    </a>
+                                </h3>
+                                <p class="product-card__brand">Gloria Jean's</p>
+                                <div class="product-card__row">
+                                    <span class="product-card__price">$24.68</span>
+                                    <img src="./assets/icons/star.svg" alt="" class="product-card__star">
+                                    <span class="product-card__score">5.0</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        
+
+     
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./template/footer.html");
+    </script>
+
+    <script>
+        const a = document.querySelector.bind(document);
+        const aa = document.querySelectorAll.bind(document);
+
+        const tabs = aa('.comment__list-title');
+        const panes = aa('.tab-pane');
+
+        tabs.forEach((tab, index) => {
+            const pane = panes[index]
+            tab.onclick = function() {
+                a('.comment__list-title.comment__list-title--active').classList.remove('comment__list-title--active');
+                this.classList.add('comment__list-title--active')
+
+                a('.tab-pane.active').classList.remove('active');
+                pane.classList.add('active')
+            }
+        })
+    </script>
+</body>
+</html>

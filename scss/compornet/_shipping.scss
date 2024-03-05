@@ -1,0 +1,146 @@
+@use "../abstracts";
+.shipping__heading-text{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42; /* 141.667% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5; /* 150% */
+    }
+}
+
+.shipping__heading--sepatret{
+    background: #d2d1d6;
+    height: 1px;
+    margin: 30px 0;
+
+    @include abstracts.screen(md) {
+        margin:16px 0;
+    }
+}
+
+.shipping__user-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include abstracts.screen(md) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+.shipping__user-use--title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.44; /* 144.444% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.6rem;
+        line-height: 1.5; /* 150% */
+    }
+}
+
+.shipping__user-use--desc--desc{
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.46; /* 146.667% */
+    
+    @include abstracts.screen(md) {
+        font-size: 1,4rem;
+        line-height: 1.42;
+    }
+}
+
+.btn-user__addres{
+    border-radius: 30px;
+}
+
+.addrese-card{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @include abstracts.screen(sm) {
+        flex-direction: column;
+    }
+}
+
+.addres-card__left{
+    display: flex;
+    flex: 1;
+    gap: 16px;
+}
+
+.card-input__checkbox{
+    appearance: none;
+}
+
+.card-input__checkbox:checked::before{
+    content: url(../icons/checked.svg);
+}
+
+.card-input__checkbox::before{
+    content: url(../icons/un-checked.svg);
+}
+
+.addres-card__title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44; /* 144.444% */
+
+    
+    @include abstracts.screen(md) {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5; /* 150% */
+    }
+
+}
+
+.addres-card__desc{
+    width: min(520px, 90%);
+    margin-top: 4px;
+    font-size: 1.5rem;
+    line-height: 146.667%;
+
+    @include abstracts.screen(md) {
+        font-size: 1.4rem;
+    }
+}
+
+.addres-card__method{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    list-style: disc inside;
+    font-size: 1.4rem;
+    line-height: 142.857%;
+
+    @include abstracts.screen(sm) {
+        margin-top: 16px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.addres-card__right{
+    @include abstracts.screen(sm) {
+        margin-top: 16px;
+    }
+}
+
+.addres-card__edit{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.44; /* 144.444% */
+    gap: 10px;
+}
+

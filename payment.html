@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./template/header-logined .html");
+    </script>
+
+    <!-- MAIN -->
+
+    <main class="product-page">
+        <div class="container">
+            <!-- Search form -->
+            <div class="product-container d-none d-md-block">
+                <div class="product-container__search">
+                    <input type="text" placeholder="Search for item" class="product-container__text">
+                    <button type="submit" class="product-container__submit">
+                        <img class="product-container__img" src="./assets/icons/search.svg" alt="icon-search">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Breadcrumbs -->
+            <div class="checkout-container">
+
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="./index-logined.html" class="breadcrumbs__link">
+                            Home
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a href="./checkout.html" class="breadcrumbs__link">
+                            Checkout
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="./shipping.html" class="breadcrumbs__link">
+                            Shipping
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">
+                            Payment method
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="checkout-container">
+                <div class="row">
+                    <div class="col-8 col-xl-8 col-lg-12">
+                        <div class="cart__info">
+                            <div class="cart__info--heading">
+                                <h2 class="cart__info--heading-text">
+                                    1. Shipping, arrives between Mon, May 16—Tue, May 24
+                                </h2>
+                               <a href="./shipping.html">
+                                <button class="addres-card__edit">
+                                    <img src="./assets/icons/edit.svg" alt="" class="addres-card__edit--icon">
+                                    Edit
+                                </button>
+                               </a>
+                            </div>
+                            <!-- Payment 1-->
+                            <article class="payment__user">
+                                <div class="payment__user-content">
+                                    <div class="payment__user-title">
+                                        <h3 class="payment__user-name">Imran Khan</h3>
+                                        <p class="payment__user-desc">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                                    </div>
+
+                                    <div class="payment__chosen">
+                                        <label class="card-info__checkbox" for="">
+                                            <input checked type="radio" id="" class="card-input__checkbox">
+                                        </label>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="payment__user">
+                                <div class="payment__user-content">
+                                    <div class="payment__user-title">
+                                        <h3 class="payment__user-name">Items details</h3>
+                                        <p class="payment__uset-desc">2 items</p>
+                                    </div>
+
+                                    <a href="./shipping.html" class="paymetn__user-link">
+                                        View details
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="cart__info">
+                            <h2 class="cart__info--heading-text">
+                                2. Shipping method
+                            </h2>
+
+                            <div class="cart__info--sparet"></div>
+
+                            <h3 class="cart__info-body--desc">
+                                Availeble Shipping method
+                            </h3>
+
+                            <article class="cart__info--payment--home">
+                                <div class="payment--home__box">
+                                    <div class="payment__home--user-left">
+                                        <img class="payment__img" src="./assets/img/card/delivery-1.png" alt="">
+
+                                        <div class="payment__home">
+                                            <h4 class="payment__user--heading">Fedex Delivery</h4>
+                                            <p class="payment__user--title">
+                                                Delivery: 2-3 days work
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="payment__chosen--left">
+                                        <label class="card-info__checkbo--paymentx" for="">
+                                            <span class="partment__desc-user">
+                                                Free
+                                            </span>
+                                            <input checked type="radio" name="card-chosen" id="" class="card-input__checkbox">
+                                        </label>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article class="cart__info--payment--home">
+                                <div class="payment--home__box">
+                                    <div class="payment__home--user-left">
+                                        <img class="payment__img" src="./assets/img/card/delivery-2.png" alt="">
+
+                                        <div class="payment__home">
+                                            <h4 class="payment__user--heading">DHL Delivery</h4>
+                                            <p class="payment__user--title">
+                                                Delivery: 1-2 days work
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="payment__chosen--left">
+                                        <label class="card-info__checkbo--paymentx" for="">
+                                            <span class="partment__desc-user">
+                                                $12.00
+                                            </span>
+                                            <input type="radio" name="card-chosen" id="" class="card-input__checkbox">
+                                        </label>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xl-4 col-lg-12">
+                        <div class="cart__info card__info-margin">
+                            <h2 class="cart__info--heading-text">
+                                Payment Details
+                            </h2>
+                            <p class="payment__deatiles--desc">
+                                Complete your purchase item by providing your payment details order.
+                            </p>
+
+                            <form action="" class="payment__deatiles--form">
+                                <!-- Group 1-->
+                                <div class="payment__form--group">
+                                    <label for="email" class="form__group-heading">
+                                        Email Address
+                                    </label>
+                                    <div class="form__input--text">
+                                        <input name="email" id="email" type="email" placeholder="example@gmail.com" class="form__input-payment">
+                                    </div>
+                                </div>
+
+                                <!-- Group 2-->
+                                <div class="payment__form--group">
+                                    <label for="email" class="form__group-heading">
+                                        Card Holder
+                                    </label>
+                                    <div class="form__input--text">
+                                        <input name="card-holder" id="card-holder" type="text" placeholder=" Card Holder" class="form__input-payment">
+                                    </div>
+                                </div>
+
+                                <!-- Group 3-->
+                                <div class="payment__form--group">
+                                    <label for="email" class="form__group-heading">
+                                        Card Details
+                                    </label>
+                                    <div class="form__input--text">
+                                        <input name="card-details" id="card-details" type="text" placeholder="Card Details" class="form__input-payment">
+                                    </div>
+                                </div>
+
+                                <!-- Group 4-->
+                                <div class="form-row">
+
+                                    <div class="payment__form--group">
+                                        <div class="form__input--text payment__form--input">
+                                            <input name="card-exp" id="card-exp" type="text" placeholder="MM/YY" class="form__input-payment">
+                                        </div>
+                                    </div>
+
+                                    <div class="payment__form--group">
+                                        <div class="form__input--text payment__form--input">
+                                            <input name="card-cvc" id="card-cvc" type="text" placeholder="CVC" class="form__input-payment">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+
+
+                            <div class="payinfo__row">
+                                <p class="payinfo__desc">
+                                    Subtotal
+                                    <span class="payinfo__title">(items)</span>
+                                </p>
+                                <div class="payinfo__num">3</div>
+                            </div>
+
+                            <div class="payinfo__row">
+                                <p class="payinfo__desc">
+                                    Price
+                                    <span class="payinfo__title">(Total)</span>
+                                </p>
+                                <div class="payinfo__num">3</div>
+                            </div>
+
+                            <div class="payinfo__row">
+                                <p class="payinfo__desc">
+                                    Shipping
+                                </p>
+                                <div class="payinfo__num">$10.00</div>
+                            </div>
+
+                            <div class="payinfo__separate"></div>
+                            
+                            <div class="payinfo__row">
+                                <p class="payinfo__desc">
+                                    Estimated Total
+                                </p>
+                                <div class="payinfo__num">$201.65</div>
+                            </div>
+
+                            <a href="#!" class="btn btn--primary cart-info__next-btn">Pay $465.98</a>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./template/footer.html");
+    </script>
+</body>
+</html>

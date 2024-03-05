@@ -1,0 +1,66 @@
+@use "../abstracts";
+html.dark {
+    --text-color: #fff;
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(63deg) brightness(104%) contrast(101%);
+
+    --body-bg:#292E39;
+    --header-bg-color: #171c28;
+    --footer-bg-color: var(--header-bg-color);
+    --footer-text-color:#9e9da6;
+
+    --top-act-group-bg-color: #292e39;
+    --top-act-group-shadow: rgba(0, 0, 0, 0.2);
+    --top-act-group-separate:#ededf6;
+
+    @include abstracts.screen(lg) {
+        --header-shadow-color:rgba(0, 0, 0, 0.2);
+    }
+    // dropdown
+    --dropdown-bg-color: #2f3441;
+    --dropdown-shadown-color: rgba(23, 28, 40, 0.4);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(17%) sepia(32%) saturate(375%) hue-rotate(185deg) brightness(94%) contrast(90%);
+    --top-menu-border-color:#171c28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(52%) saturate(3222%) hue-rotate(181deg) brightness(116%) contrast(97%);;
+
+    // Sidebar
+    --sidebar-bg:#292e39;
+    --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.40);
+    
+    // Category-item
+    --cate-item-bg:#171c28;
+    --cate-item-thumb-bg:#292e39;
+    --cate-item-title-color:#fff;
+
+    // Buttons 
+    --filter-btn-color:#fff;
+    --filter-btn-bg:#171c28; 
+    --like-btn-shadow: rgba(124, 124, 124, 0.2);
+ 
+    // Product card
+    --product-card-bg:#171c28;
+    --product-card-shadow: rgba(0, 0, 0, 0.2);
+
+    // Filter form
+    --filter-form-bg:#2f3441;
+    --filter-form-shadow:rgba(0, 0, 0, 0.4);
+    --filter-form-tag-bg: #171c28;
+    --filter-form-footer-bg: #2f3441;
+    --filter-arrow-color:  brightness(0) saturate(100%) invert(17%) sepia(32%) saturate(375%) hue-rotate(185deg) brightness(94%) contrast(90%);
+
+    // Auth
+    --auth-content-bg:#292e39;
+    --auth-intro-bg:#171c28;
+    --auth-intro-text-color:#B9BABE;
+    --auth-heading-color:#B9BABE;
+
+
+    // Form
+    --form-placehoder-color:#b9babe;
+
+      // Product Detail
+      --product-detail-bg:#292e39;
+
+      // Breadcrumbs
+      --breadcrumbs-bg:#171c28;
+      --breadcrumbs-shadow:rgba(23, 28, 40, 0.2);
+}

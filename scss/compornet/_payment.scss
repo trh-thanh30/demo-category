@@ -1,0 +1,322 @@
+@use "../abstracts";
+.cart__info{
+    padding: 30px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.20);
+
+    
+    @include abstracts.screen(md) {
+        padding: 16px;
+    }
+}
+
+.cart__info + .cart__info{
+    margin-top: 30px;
+}
+
+.cart__info--heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cart__info--heading-text{
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.45; /* 145.455% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.6rem;
+    }
+}
+
+.payment__user{
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: #F6F6F6;
+
+    @include abstracts.screen(md) {
+        padding: 16px;
+        background: #FAFAFD;
+    }
+}
+
+.payment__user-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment__user-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44; /* 144.444% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.6rem;
+    }
+}
+
+.payment__user-desc{
+    margin-top: 4px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.46; /* 146.667% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.5rem;
+    }
+}
+
+.payment__uset-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44; /* 144.444% */
+}
+
+.payment__uset-desc{
+    margin-top: 4px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.46; /* 146.667% */
+}
+
+
+.paymetn__user-link{
+    margin-right: -8px;
+    padding: 8px;
+    color: #0071dc;
+}
+
+.cart__info--sparet{
+    height: 1px;
+    background: #D2D1D6;
+    margin: 30px 0;
+
+    @include abstracts.screen(md) {
+        margin:20px 0;
+    }
+}
+
+.cart__info-body--desc{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44; /* 144.444% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.5rem;
+    }
+}
+
+.cart__info--payment--home{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #F6F6F6;
+
+    @include abstracts.screen(md) {
+        padding: 16px;
+        background: #FAFAFD;
+    }
+}
+
+.payment--home__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include abstracts.screen(md) {
+        flex-direction: column;
+    }
+}
+
+.payment__home--user-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include abstracts.screen(md) {
+        gap: 16px;
+    }
+}
+
+.payment__img{
+    width: 70px;
+    height: 54px;
+    object-fit: cover;
+
+    @include abstracts.screen(md) {
+        width: 60px;
+        height: 46px;
+        object-fit: cover;
+    }
+}
+
+.payment__user--heading{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.44; /* 144.444% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667% ;
+    }
+}
+
+.payment__user--title{
+    margin-top: 4px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.4rem;
+        line-height: 1.42; /* 142.857% */
+    }
+}
+
+.card-info__checkbo--paymentx{
+    display: flex;
+    align-items: center;
+}
+
+.partment__desc-user{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44; /* 144.444% */
+}
+
+.payment__deatiles--desc{
+    margin-top: 6px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    @include abstracts.screen(md) {
+        font-size: 1.4rem;
+    }
+}
+
+.payment__deatiles--form{
+    margin-bottom: 30px;
+}
+
+.payment__form--group{
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+        font-size: 1.6rem;
+    }
+}
+
+.form__input--text{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid  #D2D1D6;
+
+    @include abstracts.screen(md) {
+        margin-top: 10px;
+    }
+}
+
+.form__input-payment{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+
+    &:placeholder-shown{
+        color: #D2D1D6;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.44; /* 144.444% */
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+            line-height: 1.42; /* 142.857% */
+        }
+    }
+
+    @include abstracts.screen(md) {
+        font-size: 1.4rem;
+    }
+
+}
+
+.form-row{
+    display: flex;
+    gap: 30px;
+}
+
+.payment__form--input{
+    margin-top: 0px;
+}
+
+.payinfo__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payinfo__desc{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.5rem;
+    }
+}
+
+.payinfo__title{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include abstracts.screen(md) {
+        font-size: 1.4rem;
+    }
+}
+
+.payinfo__num{
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+
+    @include abstracts.screen(md) {
+        font-size: 1.5rem;
+    }
+}
+
+.payinfo__separate{
+    height: 1px;
+    background:#EDEDF6;
+    margin-bottom: 20px;
+}
+
+.cart-info__next-btn{
+    margin-top: 30px;
+    border-radius: 99px;
+}
+
+.card__info-margin{
+    @include abstracts.screen(lg) {
+        margin-top: 20px;
+    }
+}

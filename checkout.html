@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./template/header-logined .html");
+    </script>
+
+    <!-- MAIN -->
+
+    <main class="product-page">
+        <div class="container">
+            <!-- Search form -->
+            <div class="product-container d-none d-md-block">
+                <div class="product-container__search">
+                    <input type="text" placeholder="Search for item" class="product-container__text">
+                    <button type="submit" class="product-container__submit">
+                        <img class="product-container__img" src="./assets/icons/search.svg" alt="icon-search">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Breadcrumbs -->
+            <div class="checkout-container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="./index-logined.html" class="breadcrumbs__link">
+                            Home
+                            <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon">
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="./checkout.html" class="breadcrumbs__link breadcrumbs__link--current">
+                            Checkout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Product list fava -->
+            <div class="checkout-container">
+                <div class="row">
+                    <div class="col-8 col-xl-12">
+                        <div class="checkout-body">
+                            <div class="checkout--fava-list">
+                                <!-- Item1 -->
+                                <article class="checkout--fava-list__item">
+                                    <img class="item__img" src="./assets/img/product/product-1.png" alt="">
+                                    <div class="card-item__content">
+                                        <div class="card-item__left">
+                                            <h3 class="card-item__title">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </h3>
+                                            <p class="card-item__price">
+                                                $47.00 | 
+                                                <span class="card-item__starup">In Stock</span>
+                                            </p>
+                                            <div class="card-item__ctrl">
+                                                <div class="card-item__input">
+                                                    LavAzza
+                                                    <img src="./assets/icons/arrow-down-2.svg" alt="" class="card-item__input--icon">
+                                                </div>
+
+                                                <div class="card-item__input">
+                                                    <img src="./assets/icons/light.svg" alt="" class="card-item__input--icon">
+                                                    1
+                                                    <img src="./assets/icons/iconly.svg" alt="" class="card-item__input--icon">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-item__right">
+                                            <p class="card-item__toral--price">
+                                                $47.00
+                                            </p>
+                                            <div class="card-item__ctrl card-item__ctrl--left cart-item__ctrl-btn--flex">
+                                                <button class="cart-item__ctrl-btn">
+                                                    <img src="./assets/icons/heart-filter.svg" alt="">
+                                                    Save
+                                                </button>
+                                                <button  onclick="alert('Hien tai san pham chua hoan thien!')" class="cart-item__ctrl-btn">
+                                                    <img src="./assets/icons/bin.svg" alt="">
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Item2 -->
+                                <article class="checkout--fava-list__item">
+                                    <img class="item__img" src="./assets/img/product/product-2.png" alt="">
+                                    <div class="card-item__content">
+                                        <div class="card-item__left">
+                                            <h3 class="card-item__title">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </h3>
+                                            <p class="card-item__price">
+                                                $53.00 | 
+                                                <span class="card-item__starup">In Stock</span>
+                                            </p>
+                                            <div class="card-item__ctrl">
+                                                <div class="card-item__input">
+                                                    LavAzza
+                                                    <img src="./assets/icons/arrow-down-2.svg" alt="" class="card-item__input--icon">
+                                                </div>
+
+                                                <div class="card-item__input">
+                                                    <img src="./assets/icons/light.svg" alt="" class="card-item__input--icon">
+                                                    2
+                                                    <img src="./assets/icons/iconly.svg" alt="" class="card-item__input--icon">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-item__right">
+                                            <p class="card-item__toral--price">
+                                                $106.00
+                                            </p>
+                                            <div class="card-item__ctrl card-item__ctrl--left cart-item__ctrl-btn--flex">
+                                                <button class="cart-item__ctrl-btn">
+                                                    <img src="./assets/icons/heart-filter.svg" alt="">
+                                                    Save
+                                                </button>
+                                                <button onclick="alert('Hien tai san pham chua hoan thien!')" class="cart-item__ctrl-btn">
+                                                    <img src="./assets/icons/bin.svg" alt="">
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Item3 -->
+                                <article class="checkout--fava-list__item">
+                                    <img class="item__img" src="./assets/img/product/product-3.png" alt="">
+                                    <div class="card-item__content">
+                                        <div class="card-item__left">
+                                            <h3 class="card-item__title">
+                                                Qualità Oro Mountain Grown - Espresso Coffee Beans
+                                            </h3>
+                                            <p class="card-item__price">
+                                                $38.65 | 
+                                                <span class="card-item__starup">In Stock</span>
+                                            </p>
+                                            <div class="card-item__ctrl">
+                                                <div class="card-item__input">
+                                                    LavAzza
+                                                    <img src="./assets/icons/arrow-down-2.svg" alt="" class="card-item__input--icon">
+                                                </div>
+
+                                                <div class="card-item__input">
+                                                    <img src="./assets/icons/light.svg" alt="" class="card-item__input--icon">
+                                                    1
+                                                    <img src="./assets/icons/iconly.svg" alt="" class="card-item__input--icon">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-item__right">
+                                            <p class="card-item__toral--price">
+                                                $38.65
+                                            </p>
+                                            <div class="card-item__ctrl card-item__ctrl--left cart-item__ctrl-btn--flex">
+                                                <button class="cart-item__ctrl-btn">
+                                                    <img src="./assets/icons/heart-filter.svg" alt="">
+                                                    Save
+                                                </button>
+                                                <button onclick="alert('Hien tai san pham chua hoan thien!')" class="cart-item__ctrl-btn">
+                                                    <img src="./assets/icons/bin.svg" alt="">
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                            <div class="checkout--fava-footer">
+                                <div class="row gy-xl-3">
+                                    <div class="col-8 col-xl-7 col-md-12">
+                                        <div class="card-info__continue">
+                                            <a href="./index-logined.html" class="continue__link">
+                                                <img src="./assets/icons/arrow-left-2.svg" alt="" class="card__continue--icon">
+                                                Continue Shopping
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-xl-5 col-md-12">
+                                        <div class="card-info__price--total">
+                                            <div class="card-info--row">
+                                                <span>Subtotal:</span>
+                                                <span>$191.65</span>
+                                            </div> 
+                                            <div class="card-info--row">
+                                                <span>Shipping:</span>
+                                                <span>$10:00</span>
+                                            </div>  
+
+                                            <div class="card-info__row--seprate"></div>
+
+                                            <div class="card-info--row">
+                                                <span class="card-info--row__total">Total:</span>
+                                                <span class="card-info--row__total">$191.65</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-4 col-xl-12">
+                        <div class="checkout-body checkout-body__margin">
+                            <div class="card__price-row">
+                                <span>Subtotal 
+                                    <span class="card__price-row--title">(items)</span>
+                                </span>
+                                <span>3</span>
+                            </div>
+
+                            <div class="card__price-row">
+                                <span>Price  
+                                    <span class="card__price-row--title">(Total)</span>
+                                </span>
+                                <span>$191.65</span>
+                            </div>
+
+                            <div class="card__price-row">
+                                <span>Shipping</span>
+                                <span>$10.00</span>
+                            </div>
+
+                            <div class="card-info__row--seprates"></div>
+                            
+                            <div class="card__price-row">
+                                <span>Estimated Total</span>
+                                <span>$201.65</span>
+                            </div>
+
+                            <a href="./shipping.html" class="btn btn--primary btn__submit--card">
+                                Continue to checkout
+                            </a>
+                        </div>
+
+                        <div class="checkout-body checkout-body__gift">
+                            <a href="#!">
+                                <article class="gift__item">
+                                    <div class="gift__item--warp-icon">
+                                        <div class="gift__item--img-bg">
+                                            <img class="gift__item-icon" src="./assets/icons/gif.svg" alt="">
+                                        </div>
+                                        <div class="gift__item--title">
+                                            <h4 class="gift__item--title-heading">
+                                                Send this order as a gift.
+                                            </h4>
+                                            <p class="gift__item--title-desc">
+                                                Available items will be shipped to your gift recipient.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./template/footer.html");
+    </script>
+</body>
+</html>
