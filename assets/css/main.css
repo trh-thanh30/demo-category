@@ -1347,6 +1347,9 @@ html {
 
 .header {
   background: var(--header-bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 @media (max-width: 991.98px) {
   .header {
@@ -2115,7 +2118,7 @@ html {
 .drop__down-img {
   position: absolute;
   top: -14px;
-  right: 130px;
+  right: 140px;
   height: 20.5px;
   filter: var(--dropdown-arrow-color);
 }
@@ -2144,7 +2147,7 @@ html {
 .drop__down-img--cate {
   position: absolute;
   top: -14px;
-  right: 150px;
+  right: 156px;
   height: 20.5px;
 }
 
@@ -2180,7 +2183,7 @@ html {
 .drop__down-img--profile {
   position: absolute;
   top: -14px;
-  right: 25px;
+  right: 18px;
   height: 20.5px;
 }
 
