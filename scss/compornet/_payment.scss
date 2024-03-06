@@ -230,6 +230,10 @@
     }
 }
 
+
+.form__input--text:focus-within{
+    border-color: #77dae6;
+}
 .form__input-payment{
     flex: 1;
     width: 100%;

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./template/header-logined .html");
+    </script>
+
+    <!-- MAIN -->
+    <main class="profile">
+        <div class="container">
+            <!-- Search form -->
+            <div class="product-container d-none d-md-block">
+                <div class="product-container__search">
+                    <input type="text" placeholder="Search for item" class="product-container__text">
+                    <button type="submit" class="product-container__submit">
+                        <img class="product-container__img" src="./assets/icons/search.svg" alt="icon-search">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Profile container -->
+            <div class="profile-container">
+                <div class="row">
+                    <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                        <aside class="profile__sidebar">
+                            <!-- User -->
+                            <div class="profile__user">
+                                <img src="./assets/img/product/avatar-3.png" alt="" class="profile__user-img">
+                                <p class="profile__user-name">Imran Khan</p>
+                                <p class="profile__user-login">Registered: 17th May 2022</p>
+                            </div>
+    
+                            <!-- Menu 1 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__heading">Manage Account</h3>
+                                <ul class="profile__menu-item">
+                                    <li>
+                                        <a href="./edit-personal-info.html" class="profile__menu-link">
+                                            <img src="./assets/icons/profile-icon-1.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Personal info
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/addres.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Addresses
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/mail.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Communications & privacy
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <!-- Menu 2 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__heading">My items</h3>
+                                <ul class="profile__menu-item">
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/dowload.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Reorder
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/heart.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Lists
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/gift.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Registries
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <!-- Menu 3 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__heading">Subscriptions & plans</h3>
+                                <ul class="profile__menu-item">
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/seciurity.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Protection plans
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+    
+                            <!-- Menu 4 -->
+                            <div class="profile-menu">
+                                <h3 class="profile-menu__heading">Protection plans</h3>
+                                <ul class="profile__menu-item">
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/warring2.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Help
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="profile__menu-link">
+                                            <img src="./assets/icons/terms.svg" alt="" class="profile__menu-icon">
+                                            <span class="profile__meni-link--item">
+                                                Terms of Use
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </aside>
+                    </div>
+
+                    <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                        <div class="wallte-card__inner">
+
+                            <div class="wallte-card__heading">
+                                <h2 class="card__heading--title">
+                                    My Wallet
+                                </h2>
+                                <p class="card__heading--desc">
+                                    Payment methods
+                                </p>
+                            </div>
+
+                            <div class="wallte-card__user">
+                                <div class="user__wallte-bg--img">
+                                    <img src="./assets/img/card/wallte-1.png" alt="" class="wallte-user__img">
+                                </div>
+
+                                <div class="user__wallte-bg--img">
+                                    <img src="./assets/img/card/wallte-2.png" alt="" class="wallte-user__img">
+                                </div>
+
+                                <a href="./add-new-card.html" class="user__wallte-bg--radius d-none d-xl-flex">
+                                    <img src="./assets/icons/iconly.svg" alt="" class="user__wallte-bg--icon">
+
+                                    <p class="user__wallte-add-new-card">Add New Card</p>
+                                </a>
+                              
+                            </div>
+
+                            
+
+                            <div class="wallte-card__heading">
+                                <h2 class="card__heading--title">
+                                    Account info
+                                </h2>
+                                <p class="card__heading--desc">
+                                    Addresses, contact information and password
+                                </p>
+                            </div>
+
+                           <div class="profile__user--wallte">
+                            <div class="row">
+                                <div class="col-6 col-xl-12">
+                                    <a href="#!" class="info__user-link--edit">
+                                        <div class="info__user-link--title">
+                                           <div class="acoutn__info-icon--bg">
+                                                <img src="./assets/icons/mail.svg" alt="" class="user__info-icon">
+                                           </div>
+
+                                            <div class="info__user-desc">
+                                                <h3 class="info__user-desc--name">
+                                                    Email Address
+                                                </h3>
+
+                                                <p class="info__user-use">
+                                                    tarek97.ta@gmail.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-6 col-xl-12">
+                                    <a href="#!" class="info__user-link--edit">
+                                        <div class="info__user-link--title info__user-margin--xl">
+                                            <div class="acoutn__info-icon--bg">
+                                                <img src="./assets/icons/phone.svg" alt="" class="user__info-icon">
+                                           </div>
+
+                                            <div class="info__user-desc">
+                                                <h3 class="info__user-desc--name">
+                                                    Phone number
+                                                </h3>
+
+                                                <p class="info__user-use">
+                                                    +000 11122 2345 657
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-6 col-xl-12">
+                                    <a href="#!" class="info__user-link--edit">
+                                        <div class="info__user-link--title info__user-margin">
+                                            <div class="acoutn__info-icon--bg">
+                                                <img src="./assets/icons/location.svg" alt="" class="user__info-icon">
+                                           </div>
+
+                                            <div class="info__user-desc">
+                                                <h3 class="info__user-desc--name">
+                                                    Add an address
+                                                </h3>
+
+                                                <p class="info__user-use">
+                                                    Bangladesh Embassy, Washington, DC 20008
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                           </div>
+
+                            <div class="wallte-card__heading">
+                                <h2 class="card__heading--title">
+                                    Lists
+                                </h2>
+                                <p class="card__heading--desc">
+                                    2 items - Primary
+                                </p>
+                            </div>
+
+                            <div class="user__title-like">
+                                <div class="primary__title-like">
+                                    <img src="./assets/img/product/product-1.png" alt="" class="product__user--like">
+
+                                    <div class="product__method-user">
+                                        <h4 class="product__name-like">
+                                            Coffee Beans - Espresso Arabica and Robusta Beans
+                                        </h4>
+                                        <div class="product__like--title">
+                                            <p class="product__like--price">$47.00</p>
+
+                                            <button onclick="alert('Hien tai san pham chua hoan thien!')" class="btn btn--primary btn__profile">Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product__user-like--spearte"></div>
+
+                            <div class="user__title-like">
+                                <div class="primary__title-like">
+                                    <img src="./assets/img/product/product-2.png" alt="" class="product__user--like">
+
+                                    <div class="product__method-user">
+                                        <h4 class="product__name-like">
+                                            Lavazza Coffee Blends - Try the Italian Espresso
+                                        </h4>
+                                        <div class="product__like--title">
+                                            <p class="product__like--price">$53.00</p>
+
+                                            <button onclick="alert('Hien tai san pham chua hoan thien!')" class="btn btn--primary btn__profile">Add to cart</button>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wallte-card__heading wallte-card__heading--margin d-md-none">
+                                <h2 class="card__heading--title">
+                                    You have a new account?
+                                </h2>
+                                <p class="card__heading--desc">
+                                    create a new account here 
+                                </p>
+
+                                <a href="./add-new-card.html" class="btn btn--primary btn--new__card">Create new card</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer"></footer>
+    <script>
+        load("#footer", "./template/footer.html");
+    </script>
+</body>
+</html>
