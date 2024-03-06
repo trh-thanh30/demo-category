@@ -6,7 +6,7 @@
 .header {
   background: var(--header-bg-color);
   position: sticky;
-  top: 0;
+  top: -10px;
   z-index: 2;
 }
 @media (max-width: 991.98px) {
