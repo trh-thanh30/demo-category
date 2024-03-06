@@ -1348,7 +1348,7 @@ html {
 .header {
   background: var(--header-bg-color);
   position: sticky;
-  top: -10px;
+  top: -8px;
   z-index: 2;
 }
 @media (max-width: 991.98px) {
